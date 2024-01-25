@@ -1,0 +1,37 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+<div style="max-width:440px; margin-top:100px;" class="mx-auto">
+    <section>
+        <form id="account" method="post">
+            <h1>Login Here</h1>
+
+            <div asp-validation-summary="All" class="text-danger" role="alert"></div>
+            <div class="form-floating mb-3">
+                <input asp-for="Email" class="form-control" placeholder="name@example.com" />
+                <label asp-for="Email" class="form-label"></label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Password" class="form-control" placeholder="password" />
+                <label asp-for="Password" class="form-label">Password</label>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="checkbox mb-3">
+                <label asp-for="RememberMe" class="form-label">
+                    <input class="form-check-input" asp-for="RememberMe" />
+                    @Html.DisplayNameFor(m => m.RememberMe)
+                </label>
+            </div>
+            <div>
+                <button id="login-submit" type="submit" class="w-100 btn btn-lg" style="background-color:#FFC833;">Log in</button>
+            </div>
+            <div>
+                <p class="mt-2">
+                    <span>Don't have an account? </span><a asp-action="Register" asp-controller="Account" style="color:#FFC833; font-weight:bold;">Register</a>
+                </p>
+            </div>
+        </form>
+    </section>
+</div>

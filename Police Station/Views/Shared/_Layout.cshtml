@@ -1,0 +1,132 @@
+﻿﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Police_Station</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Police_Station.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow py-3" style="background-color:#353A40;">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand fw-bolder" asp-area="" asp-controller="Home" asp-action="Index" style="color:#FFC833;">LogoHere</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse ">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="CaseApplications" asp-action="Create">Case Application</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <span class="text-light fs-4">Welcome To ABC Police Station</span>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <form method="post" asp-controller="Account" asp-action="Logout">
+                                    <span class="text-light">Hello @User.Identity?.Name! </span><button type="submit" class="btn" style="background-color:#FFC833;">Logout</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="btn" style="background-color:#FFC833;" asp-controller="Account" asp-action="Register">
+                                    Register
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn ms-2" style="background-color:#FFC833;" asp-controller="Account" asp-action="Login">
+                                    Login
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    @if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Police")))
+    {
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="col-auto px-0" style="background-color:#333; border-right:4px solid #FFC833">
+                    <div class="d-flex flex-column align-items-center px-3 pt-2 text-white min-vh-100">
+                        <ul class="nav nav-pills flex-column align-items-start" id="menu">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Dashboard"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="PoliceOfficers" asp-action="Index"><i class="fa fa-graduation-cap"></i> <span>Police List</span></a>
+                            </li>
+                            <hr />
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="CaseApplications" asp-action="Index"><i class="fa fa-file-text"></i> <span>Case Applications</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Investigations" asp-action="Index"><i class="fa fa-search"></i> <span>Investigations List</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="ReportAnalysis" asp-action="Index"><i class="fa fa-pencil-square-o"></i> <span>Report Analysis</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Criminals" asp-action="Index"><i class="fa fa-user-secret"></i> <span>Criminals List</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Prisons" asp-action="Index"><i class="fa fa-braille"></i> <span>Prison List</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="PrisonRecords" asp-action="Index"><i class="fa fa-address-card"></i> <span>Prison Records</span></a>
+                            </li>
+                            <hr />
+                            @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" asp-controller="UserManagement" asp-action="UserList"><i class="fa fa-users"></i> <span>Manage Users</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" asp-area="" asp-controller="RoleManagement" asp-action="RoleList"><i class="fa fa-sliders"></i> <span>Manage Roles</span></a>
+                                </li>
+                            }                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="col py-3">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="container-fluid">
+            @RenderBody()
+        </div>
+    }
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

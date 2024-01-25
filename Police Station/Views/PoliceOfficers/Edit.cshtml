@@ -1,0 +1,174 @@
+﻿@model Police_Station.Models.PoliceOfficer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<form asp-action="Edit">
+    <div class="row">
+        <div class="col-7 mx-auto">
+            <div class="card">
+                <div class="card-header text-center alert alert-warning">
+                    <h3>Update Police Info</h3>
+                </div>
+                <div class="card-body ms-2">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="PoliceOfficerId" />
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="BadgeNumber" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="BadgeNumber" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="BadgeNumber" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Name" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="Name" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="DateOfBirth" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="DateOfBirth" class="form-control" type="date" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Rank" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <select asp-for="Rank" class="form-control">
+                                <option value="">---Select---</option>
+                                <option value="Inspector">Inspector</option>
+                                <option value="Sergeant">Sergeant</option>
+                                <option value="Lieutenant">Lieutenant</option>
+                                <option value="Captain">Captain</option>
+                                <option value="Detective">Detective</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Rank" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="BadgeType" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="BadgeType" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="BadgeType" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="JoinDate" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="JoinDate" class="form-control" type="date" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="JoinDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Salary" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="Salary" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Salary" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Shift" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <select asp-for="Shift" class="form-control">
+                                <option value="">---Select---</option>
+                                <option value="Day">Day</option>
+                                <option value="Night">Night</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Shift" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Supervisor" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="Supervisor" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Supervisor" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Department" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <select asp-for="Department" class="form-control">
+                                <option value="">---Select---</option>
+                                <option value="Patrol">Patrol</option>
+                                <option value="Robbery">Robbery</option>
+                                <option value="Traffic">Traffic</option>
+                                <option value="Fraud">Fraud</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Department" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="offset-3">
+                        <input type="submit" value="Update Data" class="btn btn-success" />
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    <div class="d-flex justify-content-start">
+                        <a asp-action="Index" class="btn btn-link btn-sm text-decoration-none"><i class="fa fa-arrow-circle-left"></i> Back to List</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>

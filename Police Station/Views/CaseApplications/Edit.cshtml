@@ -1,0 +1,312 @@
+﻿@model Police_Station.Models.CaseApplication
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="card my-2 row col-lg-8 mx-auto">
+    <div class="card-header">
+        <h3 class="alert alert-warning text-center">Update Case Application</h3>
+    </div>
+    <div class="card-body">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CaseApplicationId" />
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="VictimName" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="VictimName" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="VictimName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="VictimAge" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="VictimAge" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="VictimAge" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="VictimAddress" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="VictimAddress" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="VictimAddress" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="VictimProfession" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="VictimProfession" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="VictimProfession" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="VictimGender" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <select asp-for="VictimGender" class="form-control">
+                        <option value="">---Select---</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="VictimGender" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="VictimMaritalStatus" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <select asp-for="VictimMaritalStatus" class="form-control">
+                        <option value="">---Select---</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Unmarried">Unmarried</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Widowed">Widowed</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="VictimMaritalStatus" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="VictimNID" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="VictimNID" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="VictimNID" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="VictimPhoneNo" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="VictimPhoneNo" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="VictimPhoneNo" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="CrimeSpot" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="CrimeSpot" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="CrimeSpot" class="text-danger"></span>
+                </div>
+            </div>
+
+            <hr />
+            @* Suspect Info *@
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="SuspectName" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="SuspectName" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="SuspectName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="SuspectAge" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="SuspectAge" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="SuspectAge" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="SuspectAddress" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="SuspectAddress" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="SuspectAddress" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="SuspectGender" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <select asp-for="SuspectGender" class="form-control">
+                        <option value="">---Select---</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="SuspectGender" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="SuspectProfession" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="SuspectProfession" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="SuspectProfession" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="SuspectPhoneNo" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="SuspectPhoneNo" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="SuspectPhoneNo" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            @* Witness Info *@
+            <hr />
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="WitnessName" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="WitnessName" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="WitnessName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="WitnessAge" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="WitnessAge" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="WitnessAge" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="WitnessAddress" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="WitnessAddress" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="WitnessAddress" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="WitnessGender" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <select asp-for="VictimGender" class="form-control">
+                        <option value="">---Select---</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="WitnessGender" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="WitnessProfession" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="WitnessProfession" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="WitnessProfession" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2 fw-semibold">
+                    <label asp-for="WitnessPhoneNo" class="col-form-label"></label>
+                </div>
+                <div class="col-6">
+                    <input asp-for="WitnessPhoneNo" class="form-control" />
+                </div>
+                <div class="col-4">
+                    <span asp-validation-for="WitnessPhoneNo" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="d-flex offset-2 mt-2">
+                <input type="submit" value="Update Data" class="btn btn-success btn-sm" />
+            </div>
+
+        </form>
+    </div>
+    <div class="card-footer">
+        <div class="d-flex justify-content-start">
+            <a asp-action="Index" class="btn btn-link btn-sm text-decoration-none"><i class="fa fa-arrow-circle-left"></i> Back to List</a>
+        </div>
+    </div>
+
+</div>

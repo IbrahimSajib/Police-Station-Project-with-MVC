@@ -1,0 +1,247 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Police_Station
+build_property.RootNamespace = Police_Station
+build_property.ProjectDir = D:\Practice For Github\Police Station\Police Station\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Practice For Github\Police Station\Police Station
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/CaseApplications/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZUFwcGxpY2F0aW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/CaseApplications/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZUFwcGxpY2F0aW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/CaseApplications/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZUFwcGxpY2F0aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/CaseApplications/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZUFwcGxpY2F0aW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/CaseApplications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzZUFwcGxpY2F0aW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Criminals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JpbWluYWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Criminals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JpbWluYWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Criminals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JpbWluYWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Criminals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JpbWluYWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Criminals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JpbWluYWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Home/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Investigations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aWdhdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Investigations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aWdhdGlvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Investigations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aWdhdGlvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Investigations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aWdhdGlvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Investigations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aWdhdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/PoliceOfficers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWNlT2ZmaWNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/PoliceOfficers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWNlT2ZmaWNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/PoliceOfficers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWNlT2ZmaWNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/PoliceOfficers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWNlT2ZmaWNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/PoliceOfficers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9saWNlT2ZmaWNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/PrisonRecords/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpc29uUmVjb3Jkc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/PrisonRecords/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpc29uUmVjb3Jkc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/PrisonRecords/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpc29uUmVjb3Jkc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/PrisonRecords/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpc29uUmVjb3Jkc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/PrisonRecords/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpc29uUmVjb3Jkc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Prisons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpc29uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Prisons/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpc29uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Prisons/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpc29uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Prisons/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpc29uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Prisons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpc29uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/ReportAnalysis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0QW5hbHlzaXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/ReportAnalysis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0QW5hbHlzaXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/ReportAnalysis/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0QW5hbHlzaXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/ReportAnalysis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0QW5hbHlzaXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/ReportAnalysis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0QW5hbHlzaXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/RoleManagement/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZU1hbmFnZW1lbnRcQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/RoleManagement/EditRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZU1hbmFnZW1lbnRcRWRpdFJvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/RoleManagement/ManageUsersInRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZU1hbmFnZW1lbnRcTWFuYWdlVXNlcnNJblJvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/RoleManagement/RoleList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZU1hbmFnZW1lbnRcUm9sZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Shared/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Shared/Successful.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFN1Y2Nlc3NmdWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/UserManagement/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZW1lbnRcRWRpdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/UserManagement/ManageRolesOfUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZW1lbnRcTWFuYWdlUm9sZXNPZlVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/UserManagement/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZW1lbnRcVXNlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Practice For Github/Police Station/Police Station/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-q00mkyib82

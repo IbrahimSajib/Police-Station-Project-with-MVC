@@ -1,0 +1,96 @@
+﻿@model Police_Station.Models.ReportAnalysis
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<form asp-action="Create">
+    <div class="row">
+        <div class="col-7 mx-auto">
+            <div class="card">
+                <div class="card-header text-center alert alert-success">
+                    <h3>New Report Analysis</h3>
+                </div>
+                <div class="card-body ms-2">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="AnalysisResults" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="AnalysisResults" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="AnalysisResults" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="ReportingDate" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="ReportingDate" class="form-control" type="date" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="ReportingDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Conclusions" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="Conclusions" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Conclusions" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="CaseApplicationId" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="CaseApplicationId" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="CaseApplicationId" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="PoliceOfficerId" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <select asp-for="PoliceOfficerId" class="form-control" asp-items="ViewBag.PoliceOfficerId">
+                                <option value="">---Select----</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="PoliceOfficerId" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="offset-3">
+                        <input type="submit" value="Save Data" class="btn btn-success" />
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    <div class="d-flex justify-content-start">
+                        <a asp-action="Index" class="btn btn-link btn-sm text-decoration-none"><i class="fa fa-arrow-circle-left"></i> Back to List</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>

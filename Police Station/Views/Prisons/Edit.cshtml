@@ -1,0 +1,84 @@
+﻿@model Police_Station.Models.Prison
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<form asp-action="Edit">
+    <div class="row">
+        <div class="col-7 mx-auto">
+            <div class="card">
+                <div class="card-header text-center alert alert-warning">
+                    <h3>New Prison Info</h3>
+                </div>
+                <div class="card-body ms-2">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="PrisonId" />
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="PrisonName" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="PrisonName" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="PrisonName" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Location" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="Location" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Location" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="Capacity" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="Capacity" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="Capacity" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <label asp-for="ContactInfo" class="col-form-label"></label>
+                        </div>
+                        <div class="col-5">
+                            <input asp-for="ContactInfo" class="form-control" />
+                        </div>
+                        <div class="col-4">
+                            <span asp-validation-for="ContactInfo" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="offset-3">
+                        <input type="submit" value="Update Data" class="btn btn-success" />
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    <div class="d-flex justify-content-start">
+                        <a asp-action="Index" class="btn btn-link btn-sm text-decoration-none"><i class="fa fa-arrow-circle-left"></i> Back to List</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>

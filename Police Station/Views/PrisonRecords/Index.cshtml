@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Police_Station.Models.PrisonRecord>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="card mt-2 mb-2">
+    <div class="card-header">
+        <h2 class="alert alert-success text-center">Prison Records</h2>
+        <div class="d-flex justify-content-end">
+            <a asp-action="Create" class="btn btn-success"><i class="fa fa-plus"></i> Add New</a>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <table class="table table-striped table-bordered text-center align-middle">
+            <thead class="table-success">
+                <tr>
+                    <th>
+                        Criminal Name
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Prison)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EntryDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ReleaseDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ReasonForImprisonment)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Criminal.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Prison.PrisonName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EntryDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ReleaseDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ReasonForImprisonment)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.PrisonRecordId" class="btn btn-warning btn-sm me-2"><i class="fa fa-edit"></i></a>
+                            <a asp-action="Delete" asp-route-id="@item.PrisonRecordId" class="btn btn-danger btn-sm me-2"><i class="fa fa-trash"></i></a>
+                            <a asp-action="Details" asp-route-id="@item.PrisonRecordId" class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
