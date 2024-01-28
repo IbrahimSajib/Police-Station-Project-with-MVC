@@ -20,7 +20,7 @@
             <thead class="table-success">
                 <tr>
                     <th>
-                        @Html.DisplayNameFor(model => model.CaseApplication.VictimName)
+                        @Html.DisplayNameFor(model => model.CaseApplication.SuspectName)
                     </th>
                     <th>
                         @Html.DisplayNameFor(model => model.AnalysisResults)
@@ -46,15 +46,15 @@
                 {
                     <tr>
                         <td>
-                            @Html.DisplayFor(modelItem => item.CaseApplication.VictimName)
+                            @Html.DisplayFor(modelItem => item.CaseApplication.SuspectName)
                         </td>
-                        <td>
+                        <td class="text-start">
                             @Html.DisplayFor(modelItem => item.AnalysisResults)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.ReportingDate)
                         </td>
-                        <td>
+                        <td class="text-start">
                             @Html.DisplayFor(modelItem => item.Conclusions)
                         </td>
                         <td>
@@ -63,7 +63,7 @@
                         <td>
                             @Html.DisplayFor(modelItem => item.PoliceOfficer.Name)
                         </td>
-                        <td>
+                        <td width="135">
                             <a asp-action="Edit" asp-route-id="@item.ReportAnalysisId" class="btn btn-warning btn-sm me-2"><i class="fa fa-edit"></i></a>
                             <a asp-action="Delete" asp-route-id="@item.ReportAnalysisId" class="btn btn-danger btn-sm me-2"><i class="fa fa-trash"></i></a>
                             <a asp-action="Details" asp-route-id="@item.ReportAnalysisId" class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>

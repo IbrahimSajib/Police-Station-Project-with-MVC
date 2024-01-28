@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Police Station")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75c01ff33527c4d974513206a131e7a6237fe34d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Police Station")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Police Station")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

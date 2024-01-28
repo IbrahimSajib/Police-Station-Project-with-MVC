@@ -13,10 +13,10 @@ namespace Police_Station.Models
         [ForeignKey("Prison")]
         [DisplayName("Prison")]
         public int? PrisonId { get; set; }
-        [Required, Column(TypeName = "date"), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [Required, Column(TypeName = "date"), DisplayFormat(DataFormatString = "{0:yyyy-MMM-dd}")]
         [Display(Name = "Entry Date")]
         public DateTime? EntryDate { get; set; }
-        [Column(TypeName = "date"), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [Column(TypeName = "date"), DisplayFormat(DataFormatString = "{0:yyyy-MMM-dd}")]
         [Display(Name = "Release Date")]
         public DateTime? ReleaseDate { get; set; }
         public string? ReasonForImprisonment { get; set; }

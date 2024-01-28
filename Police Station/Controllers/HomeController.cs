@@ -29,6 +29,9 @@ namespace Police_Station.Controllers
             ViewBag.totalPolice = _context.PoliceOfficers.Count();
             ViewBag.totalCriminals = _context.Criminals.Count();
             ViewBag.totalCaseApplications = _context.CaseApplications.Count();
+            ViewBag.totalInvestigation = _context.InvestigationInfos.Count();
+            ViewBag.totalReportAnalysis = _context.ReportAnalysis.Count();
+            ViewBag.totalPrisons = _context.Prisons.Count();
             return View();
         }
         public IActionResult Privacy()
@@ -43,3 +46,4 @@ namespace Police_Station.Controllers
         }
     }
 }
+

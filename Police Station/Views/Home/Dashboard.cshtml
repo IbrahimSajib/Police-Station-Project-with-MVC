@@ -8,7 +8,7 @@
         <h2 class="alert alert-success text-center">Police Station</h2>
     </div>
     <div class="card-body row">
-        <div class="card col text-center m-2">
+        <div class="card col-4 text-center mt-2">
             <div class="card-header">
                 <h4>Total Case Applications</h4>
             </div>
@@ -18,7 +18,43 @@
             </div>
 
         </div>
-        <div class="card col text-center m-2">
+        <div class="card col-4 text-center mt-2">
+            <div class="card-header">
+                <h4>Total Investigation</h4>
+            </div>
+            <div class="card-body">
+                <h1>@ViewBag.totalInvestigation</h1>
+                <a asp-action="Index" asp-controller="Investigations" class="btn btn-outline-success">View Details</a>
+            </div>
+        </div>
+        <div class="card col-4 text-center mt-2">
+            <div class="card-header">
+                <h4>Total Report Analysis</h4>
+            </div>
+            <div class="card-body">
+                <h1>@ViewBag.totalReportAnalysis</h1>
+                <a asp-action="Index" asp-controller="ReportAnalysis" class="btn btn-outline-success">View Details</a>
+            </div>
+        </div>
+        <div class="card col-4 text-center mt-2">
+            <div class="card-header">
+                <h4>Total Police Officer</h4>
+            </div>
+            <div class="card-body">
+                <h1>@ViewBag.totalPolice</h1>
+                <a asp-action="Index" asp-controller="PoliceOfficers" class="btn btn-outline-success">View Details</a>
+            </div>
+        </div>
+        <div class="card col-4 text-center mt-2">
+            <div class="card-header">
+                <h4>Total Prison</h4>
+            </div>
+            <div class="card-body">
+                <h1>@ViewBag.totalPrisons</h1>
+                <a asp-action="Index" asp-controller="Prisons" class="btn btn-outline-success">View Details</a>
+            </div>
+        </div>
+        <div class="card col-4 text-center mt-2">
             <div class="card-header">
                 <h4>Total Criminals</h4>
             </div>
@@ -27,17 +63,6 @@
                 <a asp-action="Index" asp-controller="Criminals" class="btn btn-outline-success">View Details</a>
             </div>
         </div>
-        <div class="card col text-center m-2">
-            <div class="card-header">
-                <h4>Total Police Officer</h4>
-            </div>
-            <div class="card-body">
-                <h1>@ViewBag.totalPolice</h1>
-                <a asp-action="Index" asp-controller="PoliceOfficers" class="btn btn-outline-success">View Details</a>
-            </div>
-
-        </div>
-
     </div>
 
 </div>

@@ -289,3 +289,4 @@ D:\Practice For Github\Police Station\Police Station\obj\Debug\net8.0\Police Sta
 D:\Practice For Github\Police Station\Police Station\obj\Debug\net8.0\Police Station.genruntimeconfig.cache
 D:\Practice For Github\Police Station\Police Station\obj\Debug\net8.0\ref\Police Station.dll
 D:\Practice For Github\Police Station\Police Station\bin\Debug\net8.0\libman.json
+D:\Practice For Github\Police Station\Police Station\obj\Debug\net8.0\Police Station.sourcelink.json

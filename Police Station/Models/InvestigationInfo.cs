@@ -7,10 +7,10 @@ namespace Police_Station.Models
     public class InvestigationInfo
     {
         public int InvestigationInfoId { get; set; }
-        [Required, DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [Required, DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:yyyy-MMM-dd}")]
         [Display(Name = "Start Date")]
         public DateTime? StartDate { get; set; }
-        [DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:yyyy-MMM-dd}")]
         [Display(Name = "End Date")]
         public DateTime? EndDate { get; set; }
         [Required]

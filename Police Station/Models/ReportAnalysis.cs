@@ -9,7 +9,7 @@ namespace Police_Station.Models
     {
         public int ReportAnalysisId { get; set; }
         public string? AnalysisResults { get; set; }
-        [Required, Column(TypeName = "date"), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [Required, DataType(DataType.Date), DisplayFormat(DataFormatString = "{0:yyyy-MMM-dd}")]
         [Display(Name = "Reporting Date")]
         public DateTime? ReportingDate { get; set; }
         public string? Conclusions { get; set; }
